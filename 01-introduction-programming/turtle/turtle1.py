@@ -5,9 +5,9 @@ def triangle():
     fd(100)
     rt(120)
 
-def square():
+def square(length = 100):
   for i in range(4):
-    fd(100)
+    fd(length)
     rt(90)
 
 def squareThing():
@@ -21,9 +21,25 @@ def octagon():
     fd(100)
     rt(45)
 
+def polygon(sides, length = 100):
+  for i in range(sides):
+    fd(100)
+    rt(360/sides)
+
 def circle():
   for i in range(360):
     fd(1)
     rt(1)
+
+def spiral(times = 30):
+  '''draws a spiral of squares.'''
+  color('blue')
+  length = 10
+  for i in range(times):
+    square(length)
+    rt(5)
+    length = length + 5
+
+polygon(10)
 
 exitonclick()
