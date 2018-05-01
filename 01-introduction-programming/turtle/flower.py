@@ -34,7 +34,7 @@ def flower():
   tur.fd(100)
   petal()
   tur.fd(150)
-  tur.color('pink')
+  tur.color('yellow')
   flowerhead()
 
 flower()
